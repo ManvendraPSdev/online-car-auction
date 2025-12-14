@@ -29,11 +29,13 @@ export const handleUserLogin = async (req, res) => {
         const token = generateToken(user._id, user.role);
 
         // Set HTTP-only cookie
+        const isProduction = process.env.NODE_ENV === "production";
         res.cookie("auth_token", token, {
             httpOnly: true,
-            secure: process.env.NODE_ENV === "production",
-            sameSite: "lax",
+            secure: isProduction,
+            sameSite: isProduction ? "none" : "lax", // "none" required for cross-origin in production
             maxAge: 7 * 24 * 60 * 60 * 1000,
+            path: "/",
         })
 
         // Getting user gro location
@@ -118,11 +120,13 @@ export const handleUserSignup = async (req, res) => {
         const token = generateToken(newUser._id, newUser.role);
 
         // Set HTTP-only cookie
+        const isProduction = process.env.NODE_ENV === "production";
         res.cookie("auth_token", token, {
             httpOnly: true,
-            secure: process.env.NODE_ENV === "production",
-            sameSite: "lax",
+            secure: isProduction,
+            sameSite: isProduction ? "none" : "lax", // "none" required for cross-origin in production
             maxAge: 7 * 24 * 60 * 60 * 1000,
+            path: "/",
         })
 
         return res.status(201).json({ message: "User registered successfully" });
@@ -133,10 +137,12 @@ export const handleUserSignup = async (req, res) => {
 }
 
 export const handleUserLogout = async (req, res) => {
+    const isProduction = process.env.NODE_ENV === "production";
     res.clearCookie("auth_token", {
         httpOnly: true,
-        secure: process.env.NODE_ENV === "production",
-        sameSite: "lax",
+        secure: isProduction,
+        sameSite: isProduction ? "none" : "lax",
+        path: "/",
     });
     return res.status(200).json({ message: "Logged out successfully" });
 }
