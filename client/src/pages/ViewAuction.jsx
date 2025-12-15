@@ -77,7 +77,9 @@ export const ViewAuction = () => {
   const isActive = Math.max(0, new Date(data.itemEndDate) - new Date()) > 0;
 
   return (
-    <div className="min-h-screen bg-black mx-auto container">
+    <div className="min-h-screen mx-auto container" style={{ 
+      backgroundImage: 'linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 25%, #0f0f0f 50%, #0a0a0a 75%, #1a1a1a 100%)' 
+    }}>
       <main className="max-w-7xl mx-auto px-4 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Image Section */}

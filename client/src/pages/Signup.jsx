@@ -44,7 +44,9 @@ const Signup = () => {
   if (loading) return <LoadingScreen />;
 
   return (
-    <div className="min-h-screen bg-carbon-900 relative overflow-hidden">
+    <div className="min-h-screen relative overflow-hidden" style={{ 
+      backgroundImage: 'linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 25%, #0f0f0f 50%, #0a0a0a 75%, #1a1a1a 100%)' 
+    }}>
       <div className="absolute inset-0 bg-lux-gradient opacity-70 pointer-events-none" />
       <main className="relative flex items-center justify-center px-4 py-16">
         <div className="w-full max-w-md">

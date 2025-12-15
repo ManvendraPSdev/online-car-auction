@@ -39,7 +39,9 @@ const Login = () => {
   if (loading) return <LoadingScreen />;
 
   return (
-    <div className="min-h-screen bg-black relative overflow-hidden">
+    <div className="min-h-screen relative overflow-hidden" style={{ 
+      backgroundImage: 'linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 25%, #0f0f0f 50%, #0a0a0a 75%, #1a1a1a 100%)' 
+    }}>
       <main className="relative flex items-center justify-center px-4 py-16">
         <div className="w-full max-w-md">
           <div className="border border-white/10 rounded-md bg-white/5 backdrop-blur-xs p-8">

@@ -24,7 +24,9 @@ export const AuctionList = () => {
       : data?.filter((auction) => auction.itemCategory === filter);
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen" style={{ 
+      backgroundImage: 'linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 25%, #0f0f0f 50%, #0a0a0a 75%, #1a1a1a 100%)' 
+    }}>
       <main className="max-w-7xl mx-auto px-4 py-8">
         {/* Filters */}
         <div className="mb-8">

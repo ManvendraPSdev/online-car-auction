@@ -21,7 +21,9 @@ export default function Privacy() {
   if (isLoading) return <LoadingScreen />;
 
   return (
-    <div className="min-h-screen flex bg-black">
+    <div className="min-h-screen flex" style={{ 
+      backgroundImage: 'linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 25%, #0f0f0f 50%, #0a0a0a 75%, #1a1a1a 100%)' 
+    }}>
       {/* Page content */}
       <main className="p-4 sm:p-6 lg:p-8 mx-auto">
         <div className="mb-6">

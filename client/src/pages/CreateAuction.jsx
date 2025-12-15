@@ -131,7 +131,9 @@ export const CreateAuction = () => {
   }
 
   return (
-    <div className="min-h-screen bg-black relative overflow-hidden">
+    <div className="min-h-screen relative overflow-hidden" style={{ 
+      backgroundImage: 'linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 25%, #0f0f0f 50%, #0a0a0a 75%, #1a1a1a 100%)' 
+    }}>
       <div className="absolute inset-0 bg-lux-gradient opacity-80 pointer-events-none" />
       <main className="relative max-w-5xl mx-auto px-4 py-12 space-y-6">
         <div>

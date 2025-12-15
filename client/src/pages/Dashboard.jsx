@@ -14,7 +14,9 @@ const Dashboard = () => {
   if (isLoading) return <LoadingScreen />;
 
   return (
-    <div className="bg-black min-h-screen">
+    <div className="min-h-screen" style={{ 
+      backgroundImage: 'linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 25%, #0f0f0f 50%, #0a0a0a 75%, #1a1a1a 100%)' 
+    }}>
       <main className="max-w-7xl mx-auto px-4 py-8">
         {/* Stats */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">

@@ -88,14 +88,14 @@ export const Navbar = () => {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 10 }}
                       transition={{ duration: 0.18, ease: "easeOut" }}
-                      className="absolute left-0 mt-3 w-[380px] rounded-2xl bg-white/8 backdrop-blur-md border border-white/10 shadow-elevated p-4"
+                      className="absolute left-0 mt-3 w-[380px] rounded-2xl bg-black border border-white/10 shadow-elevated p-4"
                     >
                       <div className="grid grid-cols-1 gap-3">
                         {group.items.map((item) => (
                           <Link
                             key={item.title}
                             to={item.href}
-                            className="block rounded-xl border border-white/10 bg-white/5 px-4 py-3 hover:bg-white/10 transition duration-200"
+                            className="block rounded-xl border border-white/10 bg-gray-900 px-4 py-3 hover:bg-gray-800 transition duration-200"
                           >
                             <div className="text-white font-semibold text-sm">
                               {item.title}
@@ -264,7 +264,6 @@ export const Navbar = () => {
     </>
   );
 };
-
 export const LoginSignup = () => {
   return (
     <div className="hidden lg:flex items-center space-x-3">
@@ -280,3 +279,4 @@ export const LoginSignup = () => {
     </div>
   );
 };
+

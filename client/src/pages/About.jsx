@@ -5,7 +5,9 @@ import { useSelector } from "react-redux";
 export const About = () => {
   const { user } = useSelector((state) => state.auth);
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen" style={{ 
+      backgroundImage: 'linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 25%, #0f0f0f 50%, #0a0a0a 75%, #1a1a1a 100%)' 
+    }}>
       <div className="max-w-5xl mx-auto px-4 py-12">
         <div className="bg-white/5 backdrop-blur-xs border border-white/10 rounded-2xl  p-8">
           <h1 className="text-3xl font-bold text-white mb-8">

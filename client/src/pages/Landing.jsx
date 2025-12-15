@@ -12,7 +12,9 @@ export const Landing = () => {
   if(loading) return <LoadingScreen/>
   
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen" style={{ 
+      backgroundImage: 'linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 25%, #0f0f0f 50%, #0a0a0a 75%, #1a1a1a 100%)' 
+    }}>
       {!user && (
         <>
           <Hero />
