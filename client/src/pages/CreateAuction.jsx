@@ -47,20 +47,23 @@ export const CreateAuction = () => {
   });
 
   const categories = [
-    "Electronics",
-    "Antiques",
-    "Art",
-    "Books",
-    "Clothing",
-    "Collectibles",
-    "Home & Garden",
-    "Jewelry",
-    "Musical Instruments",
-    "Sports",
-    "Toys",
-    "Vehicles",
-    "Other",
+    "SUV",
+    "Sedan",
+    "Coupe",
+    "Convertible",
+    "Supercar",
+    "Hypercar",
+    "Luxury Vehicles",
+    "Off-Road Vehicles",
+    "Electric Vehicles",
+    "Hybrid Vehicles",
+    "Classic & Vintage Cars",
+    "Performance Cars",
+    "Modified / Custom Builds",
+    "Commercial Vehicles",
+    "Other Vehicles",
   ];
+  
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
