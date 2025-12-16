@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js"
   },
-  "author": "Avnish Kumar",
+  "author": "Manvendra pratap singh",
   "license": "MIT",
   "type": "module",
   "dependencies": {

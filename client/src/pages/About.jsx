@@ -72,7 +72,7 @@ export const About = () => {
                 Developer
               </h2>
               <p className="text-ink-200">
-                This project has been created by <strong>Avnish Kumar</strong>{" "}
+                This project has been created by <strong>Manvendra pratap singh</strong>{" "}
                 as a demonstration of modern web development techniques and to
                 help fellow students in their academic journey.
               </p>
@@ -85,23 +85,23 @@ export const About = () => {
                   <p className="text-ink-200">
                     <span className="font-medium text-white">GitHub Profile:</span>{" "}
                     <a
-                      href="https://github.com/theavnishkumar"
+                      href="https://github.com/ManvendraPSdev"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-ink-200 hover:text-white underline"
                     >
-                      github.com/theavnishkumar
+                      https://github.com/ManvendraPSdev
                     </a>
                   </p>
                   <p className="text-ink-200">
                     <span className="font-medium text-white">Project Repository:</span>{" "}
                     <a
-                      href="https://github.com/theavnishkumar/online-auction-system"
+                      href="https://github.com/ManvendraPSdev/online-car-auction"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-ink-200 hover:text-white underline"
                     >
-                      github.com/theavnishkumar/online-auction-system
+                      https://github.com/ManvendraPSdev/online-car-auction
                     </a>
                   </p>
                 </div>
